@@ -3,11 +3,11 @@ class Delivery():
     items = 0
     for item in order:
       items += item.quantity
-    if items > 10 and distance > 5:
+    if items > 10 and distance > 5: #branch 1 (highest)
       return 7.50
-    elif items > 5 and distance > 3:
+    elif items > 5 and distance > 3: #branch 2 (default)
       return 5
-    else:
+    else: #branch 3 (everything else)
       return 2.5
 
 class Subtotal():
